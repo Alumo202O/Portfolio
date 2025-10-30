@@ -1,0 +1,221 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --accent-color: #0078d7;
+  --card-bg: #fff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f9f9f9;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+}
+.about-text {
+  flex: 1;
+}
+.cv-btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cv-btn:hover {
+  background: #005fa3;
+}
+
+/* GRID SECTIONS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+button[type="submit"] {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button[type="submit"]:hover {
+  background: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--accent-color);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* ✅ Home Section Brown + White Background + Image */
+#home {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+  background: linear-gradient(to right, #8B5E34, #FFFFFF); /* Brown → White */
+  position: relative;
+}
+
+#home .home-container {
+  text-align: center;
+  max-width: 600px;
+  z-index: 2;
+}
+
+/* ✅ Show Your Picture on Home Section */
+#home::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: 330px;
+  background-repeat: no-repeat;
+  width: 330px;
+  height: 380px;
+  opacity: 0.95;
+}
+
+/* ✅ Home Text Styling */
+#home h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+#home h2 span {
+  color: #8B5E34; /* Brown */
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+
+/* ✅ Button Style */
+#home button {
+  background: #8B5E34;
+  color: white;
+  padding: 22px 34px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#home button:hover {
+  background: #6F482A;
+}
+
+/* ✅ Hide image on phone */
+@media(max-width: 768px) {
+  #home::after {
+    display: none;
+  }
+}
+

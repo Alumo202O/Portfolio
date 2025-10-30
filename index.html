@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ✅ HOME SECTION ADDED -->
+  <section id="home">
+    <div class="home-container">
+      <h2>Hello, I'm <span>Alumo Hessein</span></h2>
+      <p>Web Developer </p>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/Screenshot_20250717-073842__2_-removebg-preview.png" alt="Profile Photo" class="profile-pic" />
+      <div class="about-text">
+        <p>
+          I am a passionate and innovative web developer dedicated to creating responsive,
+          user-friendly, visually stunning, and highly interactive websites and web applications.
+          Leveraging modern technologies like HTML, CSS, JavaScript, and powerful frameworks,
+          I build efficient, scalable, and highly functional digital solutions that provide seamless,
+          engaging, and memorable user experiences across all devices.
+        </p>
+        <button class="cv-btn" onclick="window.open('cv.pdf')">Download CV</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Responsive Design</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">Web Hosting</div>
+      <div class="card">WordPress Development</div>
+    </div>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section id="soft-skills">
+    <h2>Soft Skills</h2>
+    <div class="grid">
+      <div class="card">Communication</div>
+      <div class="card">Teamwork</div>
+      <div class="card">Problem-Solving</div>
+      <div class="card">Time Management</div>
+      <div class="card">Decision-Making</div>
+      <div class="card">Leadership</div>
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>My Website</h3>
+        <p>A personal responsive website built with WordPress.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Portfolio</h3>
+        <p>
+          Creative graphic designer skilled in Canva and digital tools, crafting visually
+          compelling logos, branding, and designs that engage audiences.
+        </p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Alumo Hessein</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
